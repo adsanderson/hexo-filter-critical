@@ -1,0 +1,14 @@
+{
+  "name": "hexo-filter-critical",
+  "version": "1.0.0",
+  "description": "A filter to Critical extracts & inlines critical-path (above-the-fold) CSS from HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "Adam Sanderson",
+  "license": "MIT",
+  "dependencies": {
+    "critical": "^0.7.0"
+  }
+}
