@@ -9,6 +9,8 @@
   "author": "Adam Sanderson",
   "license": "MIT",
   "dependencies": {
-    "critical": "^0.7.0"
+    "accum": "^0.3.6",
+    "critical": "^0.7.0",
+    "mock-fs": "^3.6.0"
   }
 }
