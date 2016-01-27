@@ -4,12 +4,14 @@ var test = require('tape');
 
 var inlineCSS = require('../lib/inlineCSS');
 
-test('test inline CSS test', function (t) {
+test('add style tag and content to empty head', function (t) {
+
+  let mockHtmlContentTitle = '<title>test title</title>';
 
   let mockHtmlContent = `
     <html>
       <head>
-        <title>test title</title>
+        ${mockHtmlContentTitle}
       </head>
       <body>
       </body>
@@ -19,26 +21,14 @@ test('test inline CSS test', function (t) {
 
   inlineCSS(mockHtmlContent, mockCssContent)
   .then((updatedDom) => {
-    t.notEqual(updatedDom.indexOf(mockCssContent), -1);
-    t.end()
+    t.notEqual(updatedDom.indexOf('<style>'), -1, 'should contain opening style tag') ;
+    t.notEqual(updatedDom.indexOf(mockCssContent), -1, 'content should exist');
+    t.notEqual(updatedDom.indexOf('</style>'), -1, 'should contain closing style tag');
+    t.notEqual(updatedDom.indexOf(mockHtmlContentTitle), -1, 'title tag should not be effected');
+    t.end();
   })
   .catch((err) => {
-    t.end(err);
+    t.fail(err);
   });
 
-  // var dummyContent = 'some content here sadkfjh sakdlfh sajkdfh ksajldfh ksaljd fhjksadfh ksjadfh salkjdfh ksajldfh aksljd fhjksald fhksajd fhsajkd fhksajld fhjksa';
-  // var hexo = setupHexo(dummyContent);
-  //
-  // var routes = hexo.route.routes;
-  //
-  // t.plan(5);
-  //
-  // gzip.call(hexo).then(function () {
-  //     t.equal(routes['some-file.png'].data.toString().length, dummyContent.length);
-  //     t.equal(routes['some-file.xml'].data.toString().length, dummyContent.length);
-  //
-  //     t.notEqual(routes['some-file.html'].data.toString().length, dummyContent.length);
-  //     t.notEqual(routes['some-file.css'].data.toString().length, dummyContent.length);
-  //     t.notEqual(routes['some-file.js'].data.toString().length, dummyContent.length);
-  // });
 });
