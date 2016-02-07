@@ -11,10 +11,13 @@
   "dependencies": {
     "accum": "^0.3.6",
     "critical": "^0.7.0",
+    "glob-stream": "^5.3.1",
     "minimatch": "^3.0.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.1",
+    "through2": "^2.0.0",
     "tmp": "0.0.28",
+    "vinyl": "^1.1.1",
     "vinyl-fs": "^2.3.1"
   },
   "devDependencies": {
