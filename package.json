@@ -9,16 +9,18 @@
   "author": "Adam Sanderson",
   "license": "MIT",
   "dependencies": {
-    "accum": "^0.3.6",
     "critical": "^0.7.0",
+    "glob-stream": "^5.3.1",
     "minimatch": "^3.0.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.1",
+    "terminus": "^1.1.0",
+    "through2": "^2.0.0",
     "tmp": "0.0.28",
-    "vinyl-fs": "^2.3.1"
+    "vinyl": "^1.1.1"
   },
   "devDependencies": {
     "mock-fs": "^3.6.0",
-    "tape": "^4.4.0"
+    "tap": "^5.4.3"
   }
 }
