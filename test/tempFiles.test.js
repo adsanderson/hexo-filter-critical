@@ -1,6 +1,6 @@
 'use strict';
 
-var test = require('tape');
+var test = require('tap').test;
 var mock = require('mock-fs');
 var Readable = require('stream').Readable
 var fs = require('fs');
@@ -12,6 +12,7 @@ var tempFiles = require('../lib/tempFiles');
 
 function setup () {
   mock({});
+  // tempFiles = require('../lib/tempFiles');
   mockFileRouteStream.push(mockHtmlContent);
   mockFileRouteStream.push(null);
 }
@@ -34,8 +35,8 @@ test('create temp files', (t) => {
 
   tempFiles.create(mockFileRoutes, mockRoute)
   .then(() => {
-    let hasFileBeenCreated = fs.statSync('temp/' + mockFileRoutes[0]).isFile();
-    let writtenFileContent = fs.readFileSync('temp/' + mockFileRoutes[0]).toString();
+    let hasFileBeenCreated = fs.statSync(tempFiles.tmpobj.name + '/' + mockFileRoutes[0]).isFile();
+    let writtenFileContent = fs.readFileSync(tempFiles.tmpobj.name + '/' + mockFileRoutes[0]).toString();
     mock.restore();
     t.ok(hasFileBeenCreated, 'the temp index html file should be created');
     t.equal(writtenFileContent, mockHtmlContent, 'the content should be the same from teh stream to what is written out to the temp folder');
