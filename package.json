@@ -10,10 +10,12 @@
   "license": "MIT",
   "dependencies": {
     "critical": "^0.7.0",
+    "del": "^2.2.0",
     "glob-stream": "^5.3.1",
     "minimatch": "^3.0.0",
     "mkdirp": "^0.5.1",
-    "rimraf": "^2.5.1",
+    "os-tmpdir": "^1.0.1",
+    "slash": "^1.0.0",
     "terminus": "^1.1.0",
     "through2": "^2.0.0",
     "tmp": "0.0.28",
