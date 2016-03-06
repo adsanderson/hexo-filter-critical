@@ -1,4 +1,10 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+        "node": true
+  },
   "rules": {
     "comma-dangle": 1,
     "no-cond-assign": [2,"always"],
@@ -27,33 +33,7 @@
     "no-unexpected-multiline": 2,
     "arrow-spacing": [1,{"before":true,"after":true}]
   },
-  "parserOptions": {
-    "ecmaVersion": 6
-  },
-  "ecmaFeatures": {
-    "arrowFunctions": true,
-    "binaryLiterals": true,
-    "blockBindings": true,
-    "classes": true,
-    "defaultParams": true,
-    "destructuring": true,
-    "forOf": true,
-    "generators": true,
-    "modules": true,
-    "objectLiteralComputedProperties": true,
-    "objectLiteralDuplicateProperties": true,
-    "objectLiteralShorthandMethods": true,
-    "objectLiteralShorthandProperties": true,
-    "octalLiterals": true,
-    "regexUFlag": true,
-    "regexYFlag": true,
-    "restParams": true,
-    "spread": true,
-    "superInFunctions": true,
-    "templateStrings": true,
-    "unicodeCodePointEscapes": true,
-    "globalReturn": true,
-    "jsx": true,
-    "experimentalObjectRestSpread": true
-  },
+  "globals": {
+    "hexo": false
+  }
 }
