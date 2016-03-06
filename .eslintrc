@@ -27,6 +27,9 @@
     "no-unexpected-multiline": 2,
     "arrow-spacing": [1,{"before":true,"after":true}]
   },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
   "ecmaFeatures": {
     "arrowFunctions": true,
     "binaryLiterals": true,
