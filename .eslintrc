@@ -1,56 +1,16 @@
 {
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+        "node": true,
+        "es6": true
+  },
   "rules": {
-    "comma-dangle": 1,
-    "no-cond-assign": [2,"always"],
-    "no-constant-condition": 2,
-    "no-control-regex": 1,
-    "no-debugger": 1,
-    "no-dupe-args": 2,
-    "no-dupe-keys": 2,
-    "no-duplicate-case": 2,
-    "no-empty-character-class": 2,
-    "no-empty": 2,
-    "no-ex-assign": 1,
-    "no-extra-boolean-cast": 1,
-    "no-extra-parens": 1,
-    "no-extra-semi": 1,
-    "no-func-assign": 2,
-    "no-inner-declarations": [2,"functions"],
-    "no-invalid-regexp": 2,
-    "no-irregular-whitespace": 2,
-    "no-negated-in-lhs": 2,
-    "no-regex-spaces": 2,
-    "no-sparse-arrays": 2,
-    "no-unreachable": 2,
-    "use-isnan": 2,
-    "valid-typeof": 2,
-    "no-unexpected-multiline": 2,
-    "arrow-spacing": [1,{"before":true,"after":true}]
+    "no-console": 0
   },
-  "ecmaFeatures": {
-    "arrowFunctions": true,
-    "binaryLiterals": true,
-    "blockBindings": true,
-    "classes": true,
-    "defaultParams": true,
-    "destructuring": true,
-    "forOf": true,
-    "generators": true,
-    "modules": true,
-    "objectLiteralComputedProperties": true,
-    "objectLiteralDuplicateProperties": true,
-    "objectLiteralShorthandMethods": true,
-    "objectLiteralShorthandProperties": true,
-    "octalLiterals": true,
-    "regexUFlag": true,
-    "regexYFlag": true,
-    "restParams": true,
-    "spread": true,
-    "superInFunctions": true,
-    "templateStrings": true,
-    "unicodeCodePointEscapes": true,
-    "globalReturn": true,
-    "jsx": true,
-    "experimentalObjectRestSpread": true
-  },
+  "globals": {
+    "hexo": false
+  }
 }

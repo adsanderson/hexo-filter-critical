@@ -7,18 +7,17 @@ var fs = require('fs');
 
 var mockFileRouteStream = new Readable();
 var mockHtmlContent = '<html><head></head><body></body></html>';
-
 var tempFiles = require('../lib/tempFiles');
 
+mock({});
+
 function setup () {
-  mock({});
-  // tempFiles = require('../lib/tempFiles');
   mockFileRouteStream.push(mockHtmlContent);
   mockFileRouteStream.push(null);
 }
 
 function createMockRoute () {
-  function get (fileRoute) {
+  function get () {
     return mockFileRouteStream;
   }
   return {
