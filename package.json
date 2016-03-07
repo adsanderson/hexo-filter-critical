@@ -4,7 +4,8 @@
   "description": "A filter for Critical, Critical extracts & inlines critical-path (above-the-fold) CSS from HTML",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/tap/bin/run.js test/*.*"
+    "test": "node node_modules/tap/bin/run.js test/*.*",
+    "lint": "eslint lib/** test/**"
   },
   "author": "Adam Sanderson",
   "license": "MIT",

@@ -17,7 +17,7 @@ function setup () {
 }
 
 function createMockRoute () {
-  function get (fileRoute) {
+  function get () {
     return mockFileRouteStream;
   }
   return {
