@@ -12,7 +12,7 @@
   "dependencies": {
     "critical": "^0.8.0",
     "del": "^2.2.0",
-    "glob-stream": "^5.3.1",
+    "glob-stream": "^5.3.5",
     "minimatch": "^3.0.0",
     "mkdirp": "^0.5.1",
     "os-tmpdir": "^1.0.1",
