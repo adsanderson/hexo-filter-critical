@@ -19,7 +19,7 @@
     "slash": "^1.0.0",
     "terminus": "^1.1.0",
     "through2": "^2.0.0",
-    "tmp": "0.0.29",
+    "tmp": "0.0.30",
     "vinyl": "^1.1.1"
   },
   "devDependencies": {
