@@ -10,7 +10,7 @@
   "author": "Adam Sanderson",
   "license": "MIT",
   "dependencies": {
-    "critical": "^0.8.0",
+    "critical": "^0.8.1",
     "del": "^2.2.0",
     "glob-stream": "^5.3.1",
     "minimatch": "^3.0.0",
