@@ -23,7 +23,7 @@
     "vinyl": "^1.1.1"
   },
   "devDependencies": {
-    "eslint": "^3.6.0",
+    "eslint": "^3.13.1",
     "mock-fs": "^3.6.0",
     "tap": "^7.1.2"
   }
