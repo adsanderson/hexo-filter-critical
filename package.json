@@ -12,19 +12,19 @@
   "dependencies": {
     "critical": "^0.8.0",
     "del": "^2.2.0",
-    "glob-stream": "^5.3.1",
+    "glob-stream": "^6.1.0",
     "minimatch": "^3.0.0",
     "mkdirp": "^0.5.1",
     "os-tmpdir": "^1.0.1",
     "slash": "^1.0.0",
     "terminus": "^1.1.0",
     "through2": "^2.0.0",
-    "tmp": "0.0.29",
-    "vinyl": "^1.1.1"
+    "tmp": "0.0.31",
+    "vinyl": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "^3.6.0",
-    "mock-fs": "^3.6.0",
-    "tap": "^7.1.2"
+    "mock-fs": "^4.1.0",
+    "tap": "^10.3.0"
   }
 }
